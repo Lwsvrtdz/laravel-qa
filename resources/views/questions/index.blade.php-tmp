@@ -1,3 +1,5 @@
+
+Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\Lws\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
 @extends('layouts.app')
 
 @section('content')
@@ -16,7 +18,7 @@
 
                 <div class="card-body">
                     @include('layouts._messages')
-                    
+
                     @forelse($questions as $question)
                         <div class="media">
                             <div class="d-flex flex-column counters">
@@ -37,9 +39,9 @@
                                          <a href="{{ route('questions.edit', $question->id) }}" class="btn btn-sm btn-outline-info">Edit</a>
                                      </div>
                                 </div>
-                               
+
                                 <p class="lead">
-                                    Asked by 
+                                    Asked by
                                     <a href="{{ $question->user->url }}"> {{ $question->user->name }} </a>
                                     <small class="text-muted">{{ $question->created_date }}</small>
                                 </p>
